@@ -9,36 +9,39 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1 class="text-center">US Constitution Preamble</h1>
-    <div class="container text-center" id="preamble-string"></div>
-    <div class="col-md-12 text-center">
-      <button id="starts-with-t" class="btn btn-success" type="button">
-        Starts With T
-      </button>
-      <div id="result-for-t"></div>
-    </div>
-
-    <br />
-    <div class="col-md-12 text-center">
-      <button id="ends-with-e" class="btn btn-primary" type="button">
-        Ends With E
-      </button>
-      <div id="result-for-e"></div>
-    </div>
-
-    <br />
-    <div class="col-md-12 text-center">
-      <button
-        id="starts-with-t-and-ends-with-e"
-        class="btn btn-danger align-center"
-        type="button"
+    <h1 class="text-center">Historical Document Analysis</h1>
+    <div class="text-center mb-3">
+      <label for="text-selector" class="form-label fw-bold"
+        >Choose a Historical Document:</label
       >
-        Starts With T and Ends With E
-      </button>
-      <div id="result-for-t-and-e"></div>
+      <select id="text-selector" class="form-select w-auto d-inline-block">
+        <option value="preamble">US Constitution Preamble</option>
+        <option value="gettysburg">Gettysburg Address</option>
+        <option value="ihad">MLK I Have a Dream</option>
+      </select>
     </div>
+
+    <div class="animation-container" id="animation-container"></div>
+    <div class="container text-center" id="preamble-string"></div>
+   <div class="container text-center">
+  <div class="row justify-content-center g-3">
+    <div class="col-md-3 col-sm-6">
+      <button id="starts-with-t" class="btn btn-success w-100">Starts With T</button>
+      <div id="result-for-t" class="mt-2 fw-bold"></div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <button id="ends-with-e" class="btn btn-primary w-100">Ends With E</button>
+      <div id="result-for-e" class="mt-2 fw-bold"></div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+      <button id="starts-with-t-and-ends-with-e" class="btn btn-danger w-100">Starts With T & Ends With E</button>
+      <div id="result-for-t-and-e" class="mt-2 fw-bold"></div>
+    </div>
+  </div>
+</div>
     <script src="main.js"></script>
   </body>
 </html>
